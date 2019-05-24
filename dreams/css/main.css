@@ -1,0 +1,364 @@
+body{
+	font-family: "Bahnschrift";
+}
+/* ========================== */
+/* ========= HEADER ========= */
+/* ========================== */
+header{
+	background-image: url("../img/fundo-topo.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 38vw;
+	color: white;
+} 
+
+header div.topo{
+	display: flex;
+	justify-content: space-between;
+	padding: 1.5vw 10vw 1vw 10vw;
+}
+
+header h1{
+	font-size: 3vw;
+}
+
+header ul{
+	display: flex; /* um ao lado do outro */
+}
+
+header ul li{
+	padding: 1vw;	
+}
+
+header ul li p{
+	font-size: 1vw;
+}
+
+header div.title2{
+	justify-content: center;
+	text-align: center;	
+	padding: 5vw 33vw 0vw 35vw;
+}
+
+header div.title2 h2{
+	font-size: 3vw;
+	font-weight: bold;
+	padding: 0vw 0vw 2vw 0vw;
+ 	margin: 4vw 0vw 3vw 0vw;
+	border-bottom-width: 3px;
+ 	border-bottom-style: solid;
+	border-color:  #33c2f9;
+}
+
+header div.title2 span{
+	color: #CAC6C5;
+}
+/*
+header hr {
+    border: none;
+    background-color: #33c2f9;
+    height: 4px;
+    width: 34vw;
+    margin: 4vw 0vw 4vw 0vw;
+}
+*/
+header div.title2 p{
+	padding: 0vw 0.2vw 0vw 0.2vw;
+	font-size: 1.4vw;
+	font-family: Arial;
+	color: #CAC6C5;
+}
+/* =========================== */
+/* ====== CORE SERVICES ====== */
+/* =========================== */
+section.Core h1{
+	padding: 5vw 0vw 2vw 0vw;
+	text-align: center;
+	font-weight: bold;
+	font-size: 3vw;
+	border-bottom-style: solid;
+	border-bottom-width: 0.1vw;
+	border-color:  #33c2f9;
+	margin: 2vw 38vw 2vw 38vw;
+}
+
+section.Core ul{
+	align-items: baseline;
+	display: flex;
+	text-align: center;
+	padding-right: 3vw;
+}
+
+section.Core ul li{
+	padding: 3vw 7vw 5vw 7vw;
+}
+
+section.Core ul li h2{
+	margin-top: 1vw;
+	font-size: 1.2vw;
+}
+
+section.Core ul li p{
+	margin-top: 1vw;
+	color: #b8bec6;
+	font-size: 1.3vw;
+	line-height: 1.5em;
+	/*background-color: black;*/
+}
+/* ========================= */
+/* === AMAZING PORTFOLIO === */
+/* ========================= */
+section.Amazing h1{
+	margin-top: 7vw;
+	text-align: center;
+	font-weight: bold;
+	font-size: 2.5vw;
+}
+
+section.Amazing p{
+	text-align: center;
+	justify-content: center;
+	margin: 1vw 33vw 3vw 33vw;
+	color: #b8bec6;
+	font-size: 1.2vw;
+	line-height: 1.5em;
+}
+
+section.Amazing ul{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+section.Amazing li{
+	margin-bottom:-0.45vw;
+	width: 33.3%;
+}
+
+section.Amazing ul li img{
+	width: 100%;
+}
+/* ========================== */
+/* ========== TEAM ========== */
+/* ========================== */
+section.Team{
+	margin: 7vw 0vw 10vw 0vw;
+}
+
+section.Team h1{
+	padding: 0vw 0vw 1vw 0vw;
+	text-align: center;
+	font-size: 2.5vw;
+	border-bottom-width: 0.15vw;
+	border-style: solid;
+	border-color: #33c2f9; 
+	margin: 2vw 40vw 2vw 40vw;
+}
+
+section.Team ul{
+	display: flex;
+	justify-content: center;
+}
+
+section.Team ul li{
+	padding: 3vw 2vw 0vw 2vw;
+	border-radius: 5vw;
+	text-align: center;
+}
+
+section.Team ul li img{
+	border-radius: 50%;
+}
+
+section.Team ul li h2{
+	margin-top: 1vw;
+}
+
+section.Team ul li p{
+	margin: 0.6vw 0vw 0.6vw 0vw;
+	color: #b8bec6;
+	font-size: 1vw;
+}
+
+section.Team ul li ul li{
+	padding: 0vw 0.5vw 0vw 0.5vw;
+}
+/* ========================== */
+/* ========= FOOTER ========= */
+/* ========================== */
+footer{
+	padding: 3vw 0vw 3vw 0vw;
+	background-color: #111111;
+	text-align: center;
+}
+
+footer p {
+	margin: 0vw 15vw 0vw 15vw;
+	padding: 2vw 0vw 0vw 0vw;
+	border-top-width: 0.2vw;
+	border-top-style: solid;
+	border-color: white;
+	color: white;
+	font-size: 1vw;
+}
+
+/* ========================== */
+/* ======= RESPONSIVO ======= */
+/* ========================== */
+@media all and (max-width: 800px) { 
+/* ========= HEADER ========= */
+header{
+	height: 60vw;
+} 
+header div.topo{
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	padding: 1.5vw 5vw 1vw 5vw;
+}
+
+header h1{
+	font-size: 10vw;
+}
+
+header ul{
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+header ul li{
+	padding: 2vw 6vw 2vw 6vw;
+}
+
+header ul li p{
+	font-size: 4vw;
+}
+
+header div.title2{
+	justify-content: center;
+	text-align: center;	
+	padding: 10vw 5vw 0vw 5vw;
+}
+
+header div.title2 h2{
+	font-size: 5vw;
+	font-weight: bold;
+	padding: 0vw 0vw 2vw 0vw;
+ 	margin: -3vw 0vw 2vw 0vw;
+	border-bottom-width: 2px;
+}
+
+header div.title2 p{
+	padding: 0vw 0vw 0vw 0vw;
+	font-size: 4vw;
+}
+/* ====== CORE SERVICES ====== */
+section.Core h1{
+	font-size: 7vw;
+	margin: 2vw 21vw 2vw 21vw;
+}
+
+section.Core ul{
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+section.Core ul li{
+	padding: 3vw 7vw 5vw 7vw;
+}
+
+section.Core ul li h2{
+	margin-top: 2vw;
+	font-size: 4.5vw;
+}
+
+section.Core ul li p{
+	margin-top: 4vw;
+	font-size: 4vw;
+}
+/* === AMAZING PORTFOLIO === */
+section.Amazing h1{
+	font-size: 7vw;
+}
+
+section.Amazing p{
+	margin: 2vw 5vw 3vw 5vw;
+	color: #b8bec6;
+	font-size: 3.5vw;
+}
+
+section.Amazing ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+
+section.Amazing li{
+	margin-bottom:-1vw;
+	width: 100%;
+}
+/* ========== TEAM ========== */
+section.Team h1{
+	padding: 0vw 0vw 1vw 0vw;
+	font-size: 7vw;
+	margin: 2vw 22vw 4vw 22vw;
+}
+section.Team ul{
+	flex-wrap: wrap;
+	padding: 0vw 10vw 3vw 10vw;
+}
+section.Team ul li img{
+	width: 85%;
+	padding: 0vw 3vw 0vw 3vw;
+}
+
+section.Team ul li h2{
+	font-size: 4vw;
+	margin-bottom: 2vw;
+}
+
+section.Team ul li p{
+	font-size: 3.5vw;
+	margin-bottom: 2vw;
+}
+
+section.Team ul li ul li{
+	margin-right: 5vw;
+}
+/* ========= FOOTER ========= */
+footer p {
+	font-size: 3vw;
+}
+}
+/* ========================== */
+/* ======= RESPONSIVO ======= */
+/* ========================== */
+@media all and (max-width: 480px) {
+/* ========== TEAM ========== */
+section.Team h1{
+	padding: 0vw 0vw 1vw 0vw;
+	font-size: 7vw;
+	margin: 2vw 22vw 4vw 22vw;
+}
+section.Team ul{
+	flex-wrap: wrap;
+}
+section.Team ul li img{
+	width: 90%;
+}
+
+section.Team ul li p{
+	font-size: 4vw;
+	margin-bottom: 2vw;
+}
+section.Team ul li ul li img{
+	width: 90%;
+	padding: 0vw 1vw 0vw 1vw;
+}
+/* ========= FOOTER ========= */
+footer p {
+	font-size: 3.5vw;
+}
+}

@@ -1,0 +1,102 @@
+/* === PREDEFINIÇÕES === */
+html { font-size: calc(1em + 1vw); }
+
+section h1{
+	padding: 1.5vw 0vw 2vw 0vw;
+	font-size: 1.2em;
+}
+
+section form{
+	padding: 1vw 0vw 1vw 0vw;
+}
+
+section label{				
+	color: #407eb7;
+	font-size: 0.8em;
+}
+section input{
+	margin-top: 1vw;
+	font-size: 0.6em;
+	padding: 0.7vw;
+	border: 2px solid #c6d9eb;
+	color: #9d9d9d;
+	width: 100%;
+}
+
+section fieldset {
+	display: block;
+	color: #c6d9eb;
+}
+
+section fieldset select{
+	margin-top: 1.5vw;
+	font-size: 0.8em;
+	padding: 0.5vw;
+	color: #9d9d9d;
+	border: 2px solid #c6d9eb;
+}
+
+section form input.sexo{ /* Radio button */
+	height: 2em;
+	width: 2em;
+}
+
+#tel{
+	border: 2px solid #c6d9eb;
+	width: 12vw;
+	padding-top: 0.95vw;
+}
+
+#check{ /* check box */
+	height: 1.3em;
+	width: 1.3em;
+	display: inline-block;
+}
+
+#checkText{ 
+	font-size: 0.65em;
+	color: black;
+	cursor: pointer;
+}
+/*
+#checkText::before{
+	content: "";
+	width: 26px;
+	height: 26px;
+	margin-top: 0vw;
+	border: 2px solid #c6d9eb;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+#lancamentos_check, #notific_check{ 
+	display: none;
+}
+
+#lancamentos_check:checked + #checkText::before, #notific_check:checked + #checkText::before {
+	background-color: black;
+}
+*/
+section form input.cadastro{
+	color: #0f73bc;
+	background-color: white;
+	width: 40%;
+	padding: 0.8vw;
+	border: 1px solid #0f73bc;
+}
+
+section form input.cadastro:hover{
+	color: white;
+	background-color: #0f73bc;
+}
+
+section p{
+	font-size: 0.6em;
+	margin-bottom: 1em;
+}
+section p a{
+	text-decoration: none;
+}
+/* === BREAKPOINTS === */
+@media all and (max-width: 1199px) { ... } 
+@media all and (max-width: 480px) { ... }

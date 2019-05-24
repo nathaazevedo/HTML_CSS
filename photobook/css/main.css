@@ -1,0 +1,283 @@
+/* === header === */
+header{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1vw;
+}
+
+header h1{
+	margin: auto;
+}
+
+header p{
+	margin: auto;
+	font-size: 1em;
+	text-decoration: underline dotted;
+	color: black;
+	padding: 0.5vw 1vw 0.5vw 1vw;
+	background-color: #ffd200;
+	border-radius: 0.5em;
+}
+/* === banner === */ 
+section.banner{
+	margin-top: 0.5vw;
+	background-position: center;
+	background-image: url("../img/banner.png");
+	background-repeat: no-repeat;
+	color: black;
+	text-align: center;
+	background-size: 100% 100%;
+	height: 38vw;
+}
+
+section.banner h1{
+	font-size: 3vw;
+	padding-top: 3vw;
+}
+section.banner h1:first-letter{
+	font-size: 200%;
+}
+
+section.banner h2{
+	font-size: 2vw;
+	padding-top: 1vw;
+}
+
+section.banner p{
+	margin: 6.5vw 4.5vw 0vw 2vw;
+}
+
+section.banner p a{
+	text-decoration: none;
+	font-size: 2vw;
+	color: black;
+	padding: 1vw 1vw 1vw 1vw;
+	border-style: solid;
+	border-width: 0.09em;
+	border-radius: 0.3em;
+	border-color: black;
+}
+/* === service === */
+section.service{
+	background: #f3f0e7;
+	padding-bottom: 5vw;
+}
+/* service title */
+section.service h1{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-size: 3em;
+	font-family: "Bahnschrift";
+	text-align: center;
+	color: black;
+}
+/* service itens */
+section.service ul{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: center;
+	text-align: center;
+	margin-left: -4em;
+	margin-top: -2em;
+
+}
+/* service itens imagens */
+section.service ul li img{
+	padding: 2vw;
+	height: auto;
+}
+/* service itens descricao */
+section.service ul li p{
+	margin-top: 1vw;
+	font-weight: bolder;
+}
+/* button service*/
+section.service h3{
+	margin-top: 9vw;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 5vw;
+}
+section.service h3 a{
+	padding: 1em 2em 1em 2em;
+	text-decoration: none;
+	color: white;
+	background: #ff1a27;
+	border-radius: 0.3em;
+}
+/* === Testmonials === */
+section.dep{
+	padding: 0vw 15vw 5vw 15vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+/* titulo */
+section.dep h1{
+	margin-top: 5vw;
+	text-align: center;
+	font-size: 2em;
+	width: 100vw;
+	margin-bottom: 5vw;
+}
+section.dep h1:first-letter{
+	font-size: 200%;
+}
+/* paragrafo */
+section.dep div{
+	width: 32vw;
+}
+section.dep div.dir{
+	text-align: right;
+}
+section.dep p{
+	margin-bottom: 1vw;
+	font-size: 1.3em;
+}
+/*
+section.dep div.esq{
+  float:left;
+  width: 30%;
+  text-align: left;
+  margin-left: 15vw;
+}
+
+section.dep div.dir{
+  float: right;
+  width: 30%;
+  text-align: right;
+  margin-right: 15vw;
+}
+*/
+
+/* === footer === */
+footer{
+	background-color: #ffd200;
+	text-align: center;
+	padding: 1.5em 0vw 1.5em 0vw;
+	clear: both;
+	font-family: "Bahnschrift";
+	font-size: 1.3vw;
+} 
+
+/* === Resolution === */
+@media all and (max-width: 900px) {
+/* banner */
+section.banner{
+	height: 48vw;
+}
+section.banner h1{
+	font-size: 3.5vw;
+	padding-top: 5vw;
+}
+section.banner h2{
+	font-size: 3vw;
+	padding-top: 1vw;
+}
+section.banner p a{
+	font-size: 3vw;
+}
+
+/* service title */
+section.service h1{
+	font-size: 2.5em;
+	margin-bottom: 0vw;
+}
+/* service itens */
+section.service ul{
+	padding: 0vw 20vw 0vw 20vw;
+	margin-left: 0vw;
+}
+/* service itens descricao */
+section.service ul li p{
+	margin-top: 1vw;
+	font-weight: bolder;
+	font-size: 2.5vw;
+}
+/* service imagens */
+section.service ul li img{
+	width: 90%;
+	margin-top: 5vw;
+}
+/* Testmonials Title*/
+section.dep h1{
+	font-size: 1.5em;
+}
+/* === footer === */
+footer{
+	background-color: #ffd200;
+	text-align: center;
+	padding: 3vw 0vw 3vw 0vw;
+	clear: both;
+	font-family: "Bahnschrift";
+	font-size: 2vw;
+} 
+
+}
+
+
+@media all and (max-width: 460px) { 
+/* banner */
+section.banner h1{
+	font-size: 4.5vw;
+	padding-top: 5vw;
+}
+section.banner h2{
+	font-size: 3.5vw;
+}
+section.banner p a{
+	font-size: 3.5vw;
+}
+/* service title */
+section.service h1{
+	margin-bottom: 0vw;
+	font-size: 2em;
+}
+/* service itens descricao */
+section.service ul li p{
+	margin-top: 1vw;
+	font-weight: bolder;
+	font-size: 4vw;
+}
+section.service h3{
+
+	font-size: 3.5vw;
+}
+/* Testmonials Title*/
+section.dep{
+	padding: 0vw 0vw 5vw 0vw;
+	display: block;
+	justify-content: center;
+	text-align: center;
+}
+/* titulo */
+section.dep h1{
+	font-size: 1em;
+	margin-top: 5vw;
+	text-align: center;
+	width: 100vw;
+	margin-bottom: 5vw;
+}
+/* paragrafo */
+section.dep div{
+	width: 75vw;
+	margin: 15vw;
+}
+section.dep div.dir{
+	text-align: center;
+}
+section.dep p{
+	margin-bottom: 1vw;
+	font-size: 1em;
+}
+/* === footer === */
+footer{
+	background-color: #ffd200;
+	text-align: center;
+	padding: 3vw 0vw 3vw 0vw;
+	clear: both;
+	font-family: "Bahnschrift";
+	font-size: 3.4vw;
+} 
+}

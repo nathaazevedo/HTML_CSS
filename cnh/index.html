@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CNH</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Nathã Vieira de Azevedo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header>
+		<h1>Cadastro para emissão de CNH</h1>
+	</header>
+
+	<section>
+		<p align="right">* Campos Obrigatórios estão marcados com asterisco</p>
+		<form method="get" action="#">
+		<fieldset>
+			<legend> Dados Pessoais </legend>
+			<div id="left">
+				<label for="nome">Nome*<br> 
+
+				<input class="maior" type="text" name="nome" id="nome" required>
+				</label><br>
+
+				<label for="pai">Nome do Pai*<br>
+				<input class="maior" type="text" name="pai" id="pai" required>
+				</label><br>
+
+				<label for="nascimento">Data de Nascimento*<br>
+				<input type="text" name="nascimento" id="nascimento" required>
+				</label><br>
+
+				<label>Nacionalidade*</label><br>
+				<select>
+					<option>- SELECIONE -</option>
+					<option>Brasileiro</option>
+				</select><br>
+
+				<label>Naturalidade*</label><br>
+				<select>
+					<option>- SELECIONE -</option>
+				</select>
+			</div>
+
+			<div id="right">
+				
+				<label for="mae">Nome da Mãe*<br>
+				<input class="maior" type="text" name="mae" id="mae" required>
+			    </label><br> 
+
+				<label for="sexo">Sexo*<br>
+					<label><input class="inputs" type="radio" name="sexo" value="M">MASCULINO</label>
+					<label><input class="inputs" type="radio" name="sexo" value="F">FEMININO</label>
+				</label> <br>
+
+				<label>Estado*</label><br>
+				<select id="estado" name="estado">
+					<option value="NULL">- SELECIONE -</option>
+    				<option value="AC">Acre</option>
+    				<option value="AL">Alagoas</option>
+     			  	<option value="AP">Amapá</option>
+    			    <option value="AM">Amazonas</option>
+     			   	<option value="BA">Bahia</option>
+        			<option value="CE">Ceará</option>
+     			    <option value="DF">Distrito Federal</option>
+       	 			<option value="ES">Espírito Santo</option>
+      				<option value="GO">Goiás</option>
+      			  	<option value="MA">Maranhão</option>
+     			   	<option value="MT">Mato Grosso</option>
+    				<option value="MS">Mato Grosso do Sul</option>
+    				<option value="MG">Minas Gerais</option>
+    				<option value="PA">Pará</option>
+    				<option value="PB">Paraíba</option>
+    				<option value="PR">Paraná</option>
+    				<option value="PE">Pernambuco</option>
+    				<option value="PI">Piauí</option>
+    				<option value="RJ">Rio de Janeiro</option>
+    				<option value="RN">Rio Grande do Norte</option>
+    				<option value="RS">Rio Grande do Sul</option>
+    				<option value="RO">Rondônia</option>
+    				<option value="RR">Roraima</option>
+  		  			<option value="SC">Santa Catarina</option>
+    				<option value="SP">São Paulo</option>
+    				<option value="SE">Sergipe</option>
+    				<option value="TO">Tocantins</option>
+				</select><br>
+			</div><br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Dados do Condutor</legend>
+			<div id="left-2">
+				<label>Tipo de Documento<br>
+					<label><input class="inputs" type="radio" name="registro">PGU (nº CNH sem foto)</label>
+					<label><input class="inputs" type="radio" name="registro"> Registro (nº CNH com foto)</label>
+				</label><br>
+
+				<label>Categoria Atual</label><br>
+				<select>
+					<option>- SELECIONE -</option>
+				</select>
+			</div>
+
+			<div id="right-2">
+				<label>Nº Registro/PGU<br>
+					<input type="text" name="registro">
+				</label>
+			</div><br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Contato</legend>
+			<p>"IMPORTANTE: O preenchimento destes dados é 
+			fundamental para que o DETRAN possa entrar em contato"</p><br>
+
+			<div id="left">
+				<label for="telefone">
+					DDD/Telefone - (00)99999999<br>
+					<input type="text" name="telefone" id="telefone">
+				</label><br>
+
+				<label for="celular">
+					DDD/Celular - (00)999999999<br>
+					<input type="text" name="celular" id="celular">
+				</label><br>
+
+				<label><input class="inputs" type="checkbox" name="sms">Autorizo o envio de SMS pelo DETRAN</label><br>
+			</div>
+
+			<div id="right">
+				<label for="email">
+					E-mail<br>
+					<input class="maior" type="text" name="email" id="email">
+				</label><br>
+
+				<label for="email_conf">
+					Confirmar E-mail<br>
+					<input class="maior" type="text" name="email_conf" id="email_conf">
+				</label><br>
+
+				<label><input class="inputs" type="checkbox" name="email">Autorizo o envio de E-mail pelo DETRAN</label>
+			</div><br>
+
+			<div id="center">
+				<label>Deseja solicitar a CNH digital e associar o e-mail a CNH eletrônica?</label><br>
+				<label><input class="inputs" type="radio" name="eletronica">Sim</label>
+				<label><input class="inputs" type="radio" name="eletronica">Não</label>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Outras Informações</legend>
+			<div id="left">
+				<label>
+					Pretende exercer atividade remunerada? * <br>
+					<label><input class="inputs" type="radio" name="atividade">Sim</label>
+					<label><input class="inputs" type="radio" name="atividade">Não</label>
+				</label><br>
+
+				<label>
+					É militar e vai utilizar o CFC da corporação? * <br>
+					<label><input class="inputs" type="radio" name="militar">Sim</label>
+					<label><input class="inputs" type="radio" name="militar">Não</label>
+				</label>
+			</div>
+
+			<div id="right">
+			<label>
+				Tem necessidade de veículo adaptado? * <br>
+				<label><input class="inputs" type="radio" name="adaptado">Sim</label>
+				<label><input class="inputs" type="radio" name="adaptado">Não</label>
+			</label>
+			</div>
+		</fieldset>
+		</form>
+	</section>
+
+	<footer>
+		<a href="#"> CANCELAR </a>
+		<a href="#"> ENVIAR </a>
+	</footer>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+</body>
+</html>

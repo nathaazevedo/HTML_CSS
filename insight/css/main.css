@@ -1,0 +1,190 @@
+/* Definição genérica para responsividade */
+html { font-size: calc(1em + 1vw); }
+/* Especificação de tamanho de fonte entre 14px e 26px  */
+body {
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+
+/* === Header === */
+header{
+	background: #87509C;
+	display: flex;
+	justify-content: space-between;
+	padding: 2vw 3vw 2vw 3vw;
+}
+
+header h1 {
+	margin: 1.2vw 0vw 0vw 0vw;
+}
+
+header ul{
+	display: flex;
+}
+
+header ul a{
+	color: white;
+	text-decoration: none;
+	font-size: 0.7em;
+	font-family: "Trebuchet MS";
+	margin-top: 1.25em;
+	padding: 0.5em 1.25em 0.5em 1.25em;
+	border-radius: 0.2vw;
+}
+
+header ul :hover{
+	background: #59386b;
+}
+/* === BANNER === */
+
+section.banner{
+	background: #87509C;
+	padding: 9vw 16vw 9vw 16vw;
+	text-align: center;
+	font-family: "Trebuchet MS";
+}
+
+section.banner h2{
+	color: white;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+section.banner p{
+	margin: 5.5vw 4.5vw 0vw 2vw;
+}
+section.banner p a{
+	color:white;
+	background: #eb7d4b;
+	font-size: 0.65em;
+	text-decoration: none;
+	padding: 1.5vw 2vw 1.5vw 2vw;
+	border-radius: 0.5vw
+	
+}
+/* === SERVIÇOS === */
+
+section.service{
+	background: #17C2A4;
+	padding: 3vw 3vw 5vw 3vw;
+	text-align: center;
+	font-family: "Trebuchet MS";
+	color:white;
+}
+section.service h2 {
+	font-size: 1.2em;
+	padding: 0vw 2vw 4vw 2vw;
+}
+section.service p{
+	font-size: 0.75em;
+	margin: 0vw 3vw 3vw 3vw;
+}
+section.service ul{
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 5vw;
+	align-items: baseline;
+}
+section.service li{
+	margin: 0vw ;
+	width: 20vw;
+}
+section.service h3{
+	margin: 2vw 2vw 2vw 1vw;
+}
+section.service ul li img{
+	width: 60%;
+}
+section.service ul li p{
+	line-height: 1.5em;
+}
+/* === FOOTER ===*/
+
+footer{
+	background: #344B8E;
+	text-align: center;
+}
+footer li{
+	color: white;
+	margin: 3vw 2vw 1vw 2vw;
+}
+footer ul{
+	display: flex;
+	padding: 2vw 1vw 0vw 0vw;
+	justify-content: center;
+}
+footer ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 0.8em;
+	font-family: "Trebuchet MS";
+
+}
+footer ul :hover{
+	color: #337df4;
+}
+footer ul li{
+	margin: 0vw 3vw 2vw 3vw;
+}
+/* === Resolution === */
+@media all and (max-width: 768px) {
+	header{
+		display: block;
+	}
+	header h1{
+		text-align: center;
+	}
+	header ul{
+		margin: auto;
+		width: 70vw;
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+	}
+	header ul li{
+		font-size: 0.9em;
+		padding: 0vw 5vw 0vw 5vw;
+	}
+	section.service ul li{
+		width: 40vw;
+	}
+	footer ul{
+		width: 70vw;
+		margin: auto;
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+@media all and (max-width: 480px) { 
+	header{
+		display: block;
+	}
+	header ul{
+		margin: auto;
+		width: 70vw;
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+	}
+	header ul li{
+		font-size: 1.3em;
+		padding: 0vw 5vw 0vw 5vw;
+	}
+	header ul li.port{
+		padding: 0vw 15vw 0vw 15vw;
+	}
+	section.service p{
+		 margin: auto;
+		 width: 70vw;
+	}
+	section.service ul li{
+		margin: auto;
+		width: 70vw;
+	}
+	footer ul{
+		width: 70vw;
+		margin: auto;
+		display: flex;
+		justify-content: center;
+	}
+
+}
